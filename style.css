@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+}
+
+.corpo{
+    background-image: linear-gradient(to left,#fffcf2,#ccc5b9,#b2967d,#403d39); 
+    background-size: 500% 100%;
+    animation: degrade-animado 4.5s infinite alternate;
+}
+
+button{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1A1B41;
+    color: #fff;
+}
+
+button:hover{
+    background-color: #B7B6C1;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around; 
+    padding: 4rem 4rem 4rem 4rem;
+}
+
+.title{
+    padding-top: 40px;
+}
+
+.data{
+    display: flex;
+    padding: 5rem 5rem 5rem 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    border-radius: 10px;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+
+    50%{
+        background-position-x: 50% ;
+    }
+
+    100%{
+        background-position-x: 100%;
+    }
+}
